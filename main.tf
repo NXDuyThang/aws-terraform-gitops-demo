@@ -6,12 +6,12 @@ terraform {
     }
   }
 
-  # Tạm thời tắt backend nếu chưa có S3 state bucket
-  # backend "s3" {
-  #   bucket = "my-terraform-state-bucket-demo"
-  #   key    = "terraform/state.tfstate"
-  #   region = "ap-southeast-1"
-  # }
+   Tạm thời tắt backend nếu chưa có S3 state bucket
+   backend "s3" {
+     bucket = "my-terraform-state-bucket-demo"
+     key    = "terraform/state.tfstate"
+     region = "ap-southeast-1"
+   }
 }
 
 provider "aws" {
