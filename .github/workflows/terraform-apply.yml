@@ -20,3 +20,4 @@ jobs:
           aws-region: ap-southeast-1
       - run: terraform -chdir=terraform init -input=false
       - run: terraform -chdir=terraform apply -input=false -auto-approve
+      
